@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valladolid RP | Postulación a Staff</title>
+<style>
+body{margin:0;background:#f3f0ff;font-family:Arial,sans-serif;color:#202124}
+.container{max-width:760px;margin:25px auto;padding:0 14px}
+.card{background:white;border-radius:10px;box-shadow:0 2px 8px #0002;overflow:hidden;margin-bottom:18px}
+.header{border-top:8px solid #673ab7;padding:28px 30px}
+h1{margin:0 0 15px;font-size:30px} h2{font-size:20px;margin-top:0}
+.section{padding:25px 30px;border-top:1px solid #eee}
+.req{color:#d93025}
+label{display:block;font-weight:600;margin:18px 0 8px}
+input,textarea,select{width:100%;box-sizing:border-box;padding:12px;border:1px solid #bbb;border-radius:5px;font-size:15px}
+textarea{min-height:100px;resize:vertical}
+.option{font-weight:normal;margin:10px 0}
+.option input{width:auto;margin-right:8px}
+button{background:#673ab7;color:white;border:0;padding:13px 24px;border-radius:5px;font-size:16px;cursor:pointer}
+.note{background:#f8f7ff;padding:14px;border-radius:7px}
+#thanks{display:none;text-align:center;padding:35px}
+</style>
+</head>
+<body>
+<div class="container">
+<form id="form">
+<div class="card header">
+<h1>🛡️ Valladolid RP | Postulación a Staff</h1>
+<p>Este formulario está destinado a los miembros que quieran formar parte del Staff de Valladolid RP y comenzar su trayectoria dentro del equipo administrativo.</p>
+<p>Al entrar al Staff tendrás que demostrar responsabilidad, respeto, actividad, madurez y conocimiento de las normas. Los ascensos dependerán de tu actividad, comportamiento, experiencia y desempeño dentro de la comunidad.</p>
+<h2>📋 Requisitos</h2>
+<ul>
+<li>Cumplir con la edad mínima establecida por Valladolid RP.</li>
+<li>Estar verificado correctamente en Discord.</li>
+<li>Tener un personaje creado dentro del servidor.</li>
+<li>Ser responsable, respetuoso y profesional.</li>
+<li>Tener buena ortografía y saber expresarte correctamente.</li>
+<li>Tener actividad suficiente en Discord y dentro del servidor.</li>
+<li>Conocer y aplicar correctamente las normas.</li>
+<li>Actuar con calma e imparcialidad.</li>
+<li>Saber trabajar en equipo.</li>
+<li>No utilizar permisos de Staff para beneficio propio.</li>
+</ul>
+<div class="note">⚠️ <b>Importante:</b> responde con sinceridad. Las respuestas copiadas, falsas o insuficientes podrán ser rechazadas.</div>
+</div>
+
+<div class="card section">
+<h2>👤 Información del postulante</h2>
+<label>1. Nombre de Discord <span class="req">*</span></label><input required name="discord">
+<label>2. Nombre dentro de Valladolid RP <span class="req">*</span></label><input required name="nombre">
+<label>3. Edad <span class="req">*</span></label><input required type="number" min="1" name="edad">
+<label>4. ID de Discord <span class="req">*</span></label><input required name="id">
+<label>5. ¿A qué puesto quieres postularte? <span class="req">*</span></label>
+<select required name="puesto"><option value="">Selecciona...</option><option>🛡️ Moderador</option><option>🔨 Administrador</option></select>
+</div>
+
+<div class="card section">
+<h2>📚 Experiencia</h2>
+<label>6. ¿Has formado parte anteriormente del Staff de algún servidor? <span class="req">*</span></label>
+<select required name="experiencia"><option value="">Selecciona...</option><option>Sí</option><option>No</option></select>
+<label>7. Si has respondido que sí, ¿en qué servidor y qué rango tenías?</label><textarea name="experiencia_detalle"></textarea>
+<label>8. ¿Cuánto tiempo llevas jugando en Valladolid RP? <span class="req">*</span></label><input required name="tiempo">
+<label>9. ¿Qué conocimientos tienes sobre moderación y administración? <span class="req">*</span></label><textarea required name="conocimientos"></textarea>
+</div>
+
+<div class="card section">
+<h2>🧠 Conocimientos y actitud</h2>
+<label>10. ¿Por qué quieres formar parte del Staff de Valladolid RP? <span class="req">*</span></label><textarea required name="motivo"></textarea>
+<label>11. ¿Qué cualidades tienes que podrían ayudarte como miembro del Staff? <span class="req">*</span></label><textarea required name="cualidades"></textarea>
+<label>12. ¿Por qué deberíamos escogerte a ti y no a otro candidato? <span class="req">*</span></label><textarea required name="eleccion"></textarea>
+<label>13. ¿Qué significa para ti ser un buen miembro del Staff? <span class="req">*</span></label><textarea required name="buen_staff"></textarea>
+<label>14. ¿Cómo reaccionarías ante una crítica hacia tu trabajo como Staff? <span class="req">*</span></label><textarea required name="critica"></textarea>
+</div>
+
+<div class="card section">
+<h2>⚖️ Situaciones</h2>
+<label>15. Un amigo tuyo está incumpliendo una norma. ¿Qué harías? <span class="req">*</span></label><textarea required name="amigo"></textarea>
+<label>16. Dos jugadores están discutiendo y ambos incumplen las normas. ¿Cómo actuarías? <span class="req">*</span></label><textarea required name="discusion"></textarea>
+<label>17. Un jugador te insulta mientras intentas ayudarlo. ¿Cómo reaccionarías? <span class="req">*</span></label><textarea required name="insulto"></textarea>
+<label>18. Un jugador acusa a otro de incumplir una norma, pero no hay pruebas suficientes. ¿Qué harías? <span class="req">*</span></label><textarea required name="pruebas"></textarea>
+<label>19. Otro miembro del Staff está abusando de sus permisos. ¿Qué harías? <span class="req">*</span></label><textarea required name="abuso"></textarea>
+<label>20. Si cometes un error al tomar una decisión como Staff, ¿cómo actuarías? <span class="req">*</span></label><textarea required name="error"></textarea>
+</div>
+
+<div class="card section">
+<h2>⏰ Actividad y disponibilidad</h2>
+<label>21. ¿Cuánto tiempo puedes dedicar a Valladolid RP? <span class="req">*</span></label>
+<select required name="horas"><option value="">Selecciona...</option><option>Menos de 5 horas semanales</option><option>Entre 5 y 10 horas semanales</option><option>Entre 10 y 20 horas semanales</option><option>Más de 20 horas semanales</option></select>
+<label>22. ¿En qué horarios sueles estar disponible? <span class="req">*</span></label>
+<div class="option"><input type="checkbox" name="horario" value="Mañana">🌅 Mañana</div>
+<div class="option"><input type="checkbox" name="horario" value="Tarde">☀️ Tarde</div>
+<div class="option"><input type="checkbox" name="horario" value="Noche">🌙 Noche</div>
+<div class="option"><input type="checkbox" name="horario" value="Fines de semana">📅 Fines de semana</div>
+<label>23. ¿Tienes disponibilidad para reuniones o actividades del Staff? <span class="req">*</span></label>
+<select required name="reuniones"><option value="">Selecciona...</option><option>Sí</option><option>No</option><option>Depende del horario</option></select>
+</div>
+
+<div class="card section">
+<h2>📜 Normas y compromiso</h2>
+<label>24. ¿Conoces las normas de Valladolid RP? <span class="req">*</span></label>
+<select required name="normas"><option value="">Selecciona...</option><option>Sí</option><option>No</option></select>
+<label>25. ¿Te comprometes a aplicar las normas de manera justa e imparcial? <span class="req">*</span></label>
+<select required name="justicia"><option value="">Selecciona...</option><option>✅ Sí, me comprometo.</option><option>❌ No.</option></select>
+<label>26. ¿Te comprometes a no utilizar tus permisos de Staff para beneficio propio? <span class="req">*</span></label>
+<select required name="permisos"><option value="">Selecciona...</option><option>✅ Sí, me comprometo.</option><option>❌ No.</option></select>
+<label>27. ¿Aceptas que incumplir las normas internas puede provocar la retirada de tus permisos? <span class="req">*</span></label>
+<select required name="retirada"><option value="">Selecciona...</option><option>✅ Sí, acepto.</option><option>❌ No.</option></select>
+</div>
+
+<div class="card section">
+<h2>🏆 Final</h2>
+<label>28. ¿Hay algo más que quieras contarnos?</label><textarea name="final"></textarea>
+<label>29. ¿Confirmas que toda la información proporcionada es verdadera? <span class="req">*</span></label>
+<select required name="confirmacion"><option value="">Selecciona...</option><option>✅ Sí, confirmo que toda la información es verdadera.</option><option>❌ No.</option></select>
+<br><br><button type="submit">Enviar postulación</button>
+</div>
+</form>
+
+<div class="card" id="thanks">
+<h1>🎉 ¡Solicitud enviada!</h1>
+<p>Gracias por tu interés en formar parte del Staff de Valladolid RP.</p>
+<p>Tu postulación ha sido preparada para su revisión.</p>
+</div>
+</div>
+<script>
+document.getElementById('form').addEventListener('submit',function(e){
+e.preventDefault();
+document.getElementById('form').style.display='none';
+document.getElementById('thanks').style.display='block';
+window.scrollTo(0,0);
+});
+</script>
+</body>
+</html>
